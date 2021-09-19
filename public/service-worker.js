@@ -20,7 +20,7 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// The activate handler takes care of cleaning up old caches.
+// Activates a handler to delete previous caches
 self.addEventListener("activate", (event) => {
   const currentCaches = [PRECACHE, RUNTIME];
   event.waitUntil(
